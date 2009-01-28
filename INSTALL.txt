@@ -1,0 +1,14 @@
+Add the following lines to .bashrc:
+
+	export DY_DIRECTORY=~/dynamism-0.4.2
+	export LD_LIBRARY_PATH=$DY_DIRECTORY/lib:$LD_LIBRARY_PATH
+	export PYTHONPATH=$DY_DIRECTORY/core/dyna-python:$PYTHONPATH
+
+Then type "make" to build dynamism.
+
+To use the Python interface, make sure you have installed Python 2.5 as well as numpy.  
+To override the Python interface, edit dy_core.h and set:
+	#define DY_PYTHON 0
+
+For Matlab, make sure that "mex" is on your PATH.
+
